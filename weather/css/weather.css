@@ -1,0 +1,81 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+.footer{
+  width: auto;
+  height: auto;
+  text-align: center;
+  border: 2px solid #b3d4fc;
+
+
+}
+header{
+    padding: 15px;
+}
+header .logo img{
+    float: left;
+    width: 30%;
+    width: 100px;
+}
+header .search-box{
+    float: left;
+    padding: 25 px 0px;
+    width: 70%;
+}
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.search-box {
+    margin: 15px;
+}
+.search-box input {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+}
+.sky{
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 150px;
+
+    border: 1px solid pink;
+    background: #b3d4fc;
+}
+
+/*Add animation*/
+
+@-webkit-keyframes zoom{
+    from{-webkit-transform: scale(0)}
+    to{-webkit-transform:scale(1)}
+}
+@keyframes zoom{
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+/*Close button*/
+.close{
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close.focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*100% image Width on smaller screens*/
+@media only screen and (max-width:700px){
+    .sky{
+        width: 100%;
+    }
+}
